@@ -4,6 +4,8 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 http://moduscreate.com/observables-and-promises/
 
+[VIDEO][Angular 2 Final Router Resolvers - Avoid a Possible RxJs Pitfall When Writing a Router Resolver](https://www.youtube.com/watch?v=6xmCNfPP90E)
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
