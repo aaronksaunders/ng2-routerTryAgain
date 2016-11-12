@@ -1,0 +1,7 @@
+<h1>
+  {{title}}
+</h1>
+<a *ngIf="routeName === '/'"   [routerLink]="['about']">ABOUT</a>
+<a *ngIf="routeName === '/about'"    [routerLink]="['']">HOME</a>
+{{routeName}}
+<router-outlet></router-outlet>
