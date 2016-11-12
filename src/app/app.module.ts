@@ -7,6 +7,7 @@ import { TryAgainRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import {HomeDataResolver} from "./shared/homeData.resolver";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     TryAgainRoutingModule
   ],
-  providers: [],
+  providers: [
+      HomeDataResolver
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
