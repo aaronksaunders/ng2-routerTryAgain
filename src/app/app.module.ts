@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { TryAgainRoutingModule } from './app-routing.module';
 
@@ -8,21 +8,27 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import {HomeDataResolver} from "./shared/homeData.resolver";
+import { LoginComponent } from './login/login.component';
+import {AuthGuard} from "./shared/auth.guard";
+import {AuthenticationService} from "./shared/auth.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     TryAgainRoutingModule
   ],
   providers: [
-      HomeDataResolver
+      HomeDataResolver,
+      AuthGuard,
+      AuthenticationService
   ],
   bootstrap: [AppComponent]
 })
