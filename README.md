@@ -1,6 +1,12 @@
 # TryAgain
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) It is a work in progress to work with some of the new angular2 concepts
+
+- Using Angular-cli
+- Using Angular Material 2
+- Working with authentication using @CanActivate
+- Working with the new Angular 2 Router
+- Resolving date using Angular 2 Router
 
 http://moduscreate.com/observables-and-promises/
 
