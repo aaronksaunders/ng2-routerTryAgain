@@ -1,7 +1,11 @@
-<h1>
-  {{title}}
-</h1>
-<a *ngIf="routeName === '/home'"   [routerLink]="['about']">ABOUT</a>
-<a *ngIf="routeName === '/about'"    [routerLink]="['home']">HOME</a>
-{{routeName}}
-<router-outlet></router-outlet>
+<div class="app-content">
+    <h1>
+        {{title}}
+    </h1>
+    <md-toolbar color="primary">
+    <a *ngIf="routeName === '/home'" [routerLink]="['about']">ABOUT</a>
+    <a *ngIf="routeName === '/about'" [routerLink]="['home']">HOME</a>
+    {{routeName}}
+    </md-toolbar>
+    <router-outlet></router-outlet>
+</div>
