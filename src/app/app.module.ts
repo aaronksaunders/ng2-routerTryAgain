@@ -11,13 +11,15 @@ import {HomeDataResolver} from "./shared/homeData.resolver";
 import { LoginComponent } from './login/login.component';
 import {AuthGuard} from "./shared/auth.guard";
 import {AuthenticationService} from "./shared/auth.service";
+import { HomeItemComponent } from './home-item/home-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    HomeItemComponent
   ],
   imports: [
     BrowserModule,

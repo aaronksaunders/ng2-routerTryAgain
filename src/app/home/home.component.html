@@ -1,6 +1,9 @@
 <div>
   <h2>home works!</h2>
-  <pre>{{ homeDataList | json}}</pre>
+  <pre *ngIf="false">{{ homeDataList | json}}</pre>
+  <div *ngFor="let item of homeDataList">
+    <app-home-item [homeItem]="item" (showMore)="showItemDetails($event)"></app-home-item>
+  </div>
   <div>
     <button (click)="logout()">Logout</button>
   </div>

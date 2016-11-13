@@ -1,0 +1,7 @@
+<div>
+  <img [src]="homeItem.picture.thumbnail" alt="">
+  {{ homeItem.name.title }} {{ homeItem.name.first }} {{ homeItem.name.last }}
+    <div>
+    <button (click)="doMoreInfo(homeItem)">Show More...</button>
+  </div>
+</div>
