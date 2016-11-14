@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {AuthenticationService} from "../shared/auth.service";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from "@angular/router";
+import { AuthenticationService } from "../shared/auth.service";
 
 @Component({
     selector: 'app-home',
@@ -11,13 +11,15 @@ export class HomeComponent implements OnInit {
 
     homeDataList
 
-    constructor(private _route: ActivatedRoute, private _authService: AuthenticationService) {
+    constructor(private _route: ActivatedRoute,
+        private _authService: AuthenticationService,
+        private _router : Router) {
         _route.data
             .do(d => console.log("hello", d))
             .subscribe(
-                data => {
-                    return this.homeDataList = data['homeData'];
-                }
+            data => {
+                return this.homeDataList = data['homeData'];
+            }
             );
     }
 
@@ -30,6 +32,7 @@ export class HomeComponent implements OnInit {
 
     showItemDetails(_item) {
         console.log("showItemDetails", _item)
+        this._router.navigate(['/itemDetail',_item.id.value]);
     }
 
 }

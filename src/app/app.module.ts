@@ -14,6 +14,7 @@ import {AuthenticationService} from "./shared/auth.service";
 import {HomeItemComponent} from './home-item/home-item.component';
 
 import { MaterialModule } from '@angular/material';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { MaterialModule } from '@angular/material';
         AboutComponent,
         HomeComponent,
         LoginComponent,
-        HomeItemComponent
+        HomeItemComponent,
+        ItemDetailComponent
     ],
     imports: [
         BrowserModule,
