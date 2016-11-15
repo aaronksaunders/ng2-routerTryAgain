@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
 
     showItemDetails(_item) {
         console.log("showItemDetails", _item)
-        this._router.navigate(['/itemDetail',_item.id.value]);
+        this._router.navigate(['/home',_item.id.value]);
     }
 
 }
